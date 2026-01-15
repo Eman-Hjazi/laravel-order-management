@@ -5,7 +5,7 @@
 ![Architecture](https://img.shields.io/badge/Architecture-DDD-orange?style=for-the-badge)
 ![Code Quality](https://img.shields.io/badge/Cohesion-High-green?style=for-the-badge)
 
----
+
 
 ## 🧠 The Architectural Vision
 
@@ -13,14 +13,14 @@ Software systems are dynamic entities that naturally gravitate toward **entropy*
 
 This project demonstrates a transition from **Technical Partitioning** (organizing by file type) to **Domain Partitioning** (organizing by business function). By treating **Order Management** as a dedicated **Bounded Context**, we isolate core business invariants from the shifting infrastructure.
 
----
+
 
 ## 🏗️ Core Pillars of this Architecture
 
 We utilize **Domain-Driven Design (DDD)** principles to ensure high **Cohesion** and low **Coupling**:
 
 ### 📐 Layered Architecture Diagram
-<img src="images/architecture.png" alt="Architecture Diagram" width="500">
+<img src="images/architecture.png" alt="Architecture Diagram" width="600">
 
 
 ### 1. The Rich Domain Model (Entities)
@@ -32,7 +32,7 @@ To prevent floating-point errors, we use the `Money` **Value Object**. It ensure
 ### 3. Hexagonal Thinking (Repository Abstraction)
 By defining an `OrderRepositoryInterface` in the Domain layer, we decouple business logic from database technology.
 
----
+
 
 ## 📂 Structural Anatomy (PSR-4 Driven)
 
@@ -71,7 +71,6 @@ app/
 
 ```
 
----
 
 ## 🛠 Advanced Features
 
@@ -100,8 +99,6 @@ php artisan migrate --seed
 ```
 
 
-
----
 
 ## 📝 Refactor Philosophy & Commit
 
