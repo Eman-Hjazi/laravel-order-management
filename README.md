@@ -20,7 +20,7 @@ This project demonstrates a transition from **Technical Partitioning** (organizi
 We utilize **Domain-Driven Design (DDD)** principles to ensure high **Cohesion** and low **Coupling**:
 
 ### 📐 Layered Architecture Diagram
-<img src="images/architecture.png" alt="Architecture Diagram" width="600">
+![Architecture Diagram](images/architecture.png)
 
 
 ### 1. The Rich Domain Model (Entities)
