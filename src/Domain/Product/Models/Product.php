@@ -1,7 +1,7 @@
 <?php
 
-namespace App\Models;
-
+namespace Domain\Product\Models;
+use Domain\Order\Models\Order;
 use Illuminate\Database\Eloquent\Model;
 
 class Product extends Model
@@ -16,11 +16,7 @@ class Product extends Model
         return $this->hasMany(Order::class);
     }
 
-    function calculateDiscountedPrice($discountPercentage)
-    {
-        $discountAmount = ($this->price * $discountPercentage) / 100;
-        return $this->price - $discountAmount;
-    }
+
 
 
 }
